@@ -82,6 +82,10 @@
             <p>업체와 계약연도를 선택해 계약저항을 확인하세요.</p>
           </header>
 
+          <div class="guide-actions">
+            <button id="conductor-guide-button" class="guide-button" type="button">도체저항 설정 안내</button>
+          </div>
+
           <div class="field-group">
             <label for="contract-vendor">업체명</label>
             <select id="contract-vendor"></select>
@@ -108,9 +112,31 @@
       </main>
 
         <footer class="app-footer">
-          <span>v1.0.9</span>
+          <span>v1.0.11</span>
         </footer>
     </div>
+
+    <dialog id="conductor-guide-dialog" class="guide-dialog" aria-labelledby="conductor-guide-title">
+      <header class="guide-dialog-header">
+        <div>
+          <span class="eyebrow">측정기 설정</span>
+          <strong id="conductor-guide-title">도체저항 설정 안내</strong>
+        </div>
+        <button id="conductor-guide-close" class="guide-close-button" type="button" aria-label="도체저항 설정 안내 닫기">×</button>
+      </header>
+      <div class="guide-dialog-body">
+        <a
+          class="guide-image-link"
+          href="./도체저항%20셋팅.png"
+          target="_blank"
+          rel="noopener"
+          aria-label="도체저항 설정 이미지를 새 화면에서 크게 보기"
+        >
+          <img src="./도체저항%20셋팅.png" alt="Raytech Micro Junior 2 도체저항 측정 전 온도, 길이 및 단위 설정 안내" />
+        </a>
+        <p>이미지를 누르면 새 화면에서 확대해서 볼 수 있습니다.</p>
+      </div>
+    </dialog>
 
     <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
   </body>

@@ -304,6 +304,78 @@ select:focus-visible {
 
 .security-note { margin-top: 22px; }
 
+.guide-actions { margin: 0 0 24px; }
+
+.guide-button {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 16px;
+  border: 1px solid color-mix(in srgb, var(--primary) 45%, var(--line));
+  border-radius: 14px;
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.guide-dialog {
+  width: min(calc(100% - 24px), 1040px);
+  max-height: calc(100dvh - 24px);
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.guide-dialog[open] {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.guide-dialog::backdrop { background: rgba(4, 12, 18, 0.74); }
+
+.guide-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.guide-dialog-header > div { display: grid; gap: 2px; }
+.guide-dialog-header strong { font-size: 16px; }
+
+.guide-close-button {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-soft);
+  color: var(--text);
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.guide-dialog-body {
+  min-height: 0;
+  padding: 12px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.guide-image-link { display: block; border-radius: 12px; background: #ffffff; }
+.guide-image-link img { display: block; width: 100%; height: auto; border-radius: 12px; }
+.guide-dialog-body p { margin: 10px 0 2px; color: var(--muted); font-size: 12px; text-align: center; }
+
 .app-footer {
   display: flex;
   justify-content: flex-end;

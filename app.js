@@ -11,6 +11,9 @@
   const qualityResults = document.querySelector("#quality-results");
   const contractResults = document.querySelector("#contract-results");
   const contractSummary = document.querySelector("#contract-summary");
+  const conductorGuideButton = document.querySelector("#conductor-guide-button");
+  const conductorGuideDialog = document.querySelector("#conductor-guide-dialog");
+  const conductorGuideClose = document.querySelector("#conductor-guide-close");
   const installButton = document.querySelector("#install-button");
   const fatalError = document.querySelector("#fatal-error");
   const toast = document.querySelector("#toast");
@@ -231,6 +234,22 @@
       });
       refreshContractVendors();
     });
+  });
+
+  conductorGuideButton.addEventListener("click", () => {
+    if (typeof conductorGuideDialog.showModal === "function") conductorGuideDialog.showModal();
+    else conductorGuideDialog.setAttribute("open", "");
+  });
+
+  function closeConductorGuide() {
+    if (typeof conductorGuideDialog.close === "function") conductorGuideDialog.close();
+    else conductorGuideDialog.removeAttribute("open");
+  }
+
+  conductorGuideClose.addEventListener("click", closeConductorGuide);
+
+  conductorGuideDialog.addEventListener("click", (event) => {
+    if (event.target === conductorGuideDialog) closeConductorGuide();
   });
 
   window.addEventListener("beforeinstallprompt", (event) => {

@@ -1,4 +1,4 @@
-const CACHE_NAME = "quality-resistance-v1.0.9";
+const CACHE_NAME = "quality-resistance-v1.0.11";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -6,6 +6,7 @@ const APP_SHELL = [
   "./app.js",
   "./data.js",
   "./manifest.webmanifest",
+  "./도체저항%20셋팅.png",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./icons/icon-maskable-512.png",
