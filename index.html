@@ -11,12 +11,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="품질·저항" />
     <title>품질·계약저항 조회</title>
-    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="manifest" href="./manifest.webmanifest?v=1.0.12" />
     <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
     <link rel="apple-touch-icon" href="./icons/icon-192.png" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./data.js" defer></script>
-    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=1.0.12" />
+    <script src="./data.js?v=1.0.12" defer></script>
+    <script src="./app.js?v=1.0.12" defer></script>
   </head>
   <body>
     <div class="app-shell">
@@ -112,31 +112,33 @@
       </main>
 
         <footer class="app-footer">
-          <span>v1.0.11</span>
+          <span>v1.0.12</span>
         </footer>
     </div>
 
-    <dialog id="conductor-guide-dialog" class="guide-dialog" aria-labelledby="conductor-guide-title">
-      <header class="guide-dialog-header">
-        <div>
-          <span class="eyebrow">측정기 설정</span>
-          <strong id="conductor-guide-title">도체저항 설정 안내</strong>
+    <div id="conductor-guide-dialog" class="guide-dialog-backdrop" hidden>
+      <section class="guide-dialog" role="dialog" aria-modal="true" aria-labelledby="conductor-guide-title" tabindex="-1">
+        <header class="guide-dialog-header">
+          <div>
+            <span class="eyebrow">측정기 설정</span>
+            <strong id="conductor-guide-title">도체저항 설정 안내</strong>
+          </div>
+          <button id="conductor-guide-close" class="guide-close-button" type="button" aria-label="도체저항 설정 안내 닫기">×</button>
+        </header>
+        <div class="guide-dialog-body">
+          <a
+            class="guide-image-link"
+            href="./도체저항%20셋팅.png?v=1.0.12"
+            target="_blank"
+            rel="noopener"
+            aria-label="도체저항 설정 이미지를 새 화면에서 크게 보기"
+          >
+            <img src="./도체저항%20셋팅.png?v=1.0.12" alt="Raytech Micro Junior 2 도체저항 측정 전 온도, 길이 및 단위 설정 안내" />
+          </a>
+          <p>이미지를 누르면 새 화면에서 확대해서 볼 수 있습니다.</p>
         </div>
-        <button id="conductor-guide-close" class="guide-close-button" type="button" aria-label="도체저항 설정 안내 닫기">×</button>
-      </header>
-      <div class="guide-dialog-body">
-        <a
-          class="guide-image-link"
-          href="./도체저항%20셋팅.png"
-          target="_blank"
-          rel="noopener"
-          aria-label="도체저항 설정 이미지를 새 화면에서 크게 보기"
-        >
-          <img src="./도체저항%20셋팅.png" alt="Raytech Micro Junior 2 도체저항 측정 전 온도, 길이 및 단위 설정 안내" />
-        </a>
-        <p>이미지를 누르면 새 화면에서 확대해서 볼 수 있습니다.</p>
-      </div>
-    </dialog>
+      </section>
+    </div>
 
     <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
   </body>

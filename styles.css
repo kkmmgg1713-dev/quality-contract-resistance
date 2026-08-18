@@ -307,6 +307,11 @@ select:focus-visible {
 .guide-actions { margin: 0 0 24px; }
 
 .guide-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   min-height: 52px;
   padding: 0 16px;
@@ -314,15 +319,32 @@ select:focus-visible {
   border-radius: 14px;
   background: var(--primary-soft);
   color: var(--primary-strong);
+  font-size: 15px;
   font-weight: 800;
+  line-height: 1.3;
+  text-align: center;
   cursor: pointer;
 }
+
+.guide-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: max(12px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom));
+  background: rgba(4, 12, 18, 0.74);
+}
+
+.guide-dialog-backdrop[hidden] { display: none; }
+body.guide-open { overflow: hidden; }
 
 .guide-dialog {
   width: min(calc(100% - 24px), 1040px);
   max-height: calc(100dvh - 24px);
-  margin: auto;
   padding: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -330,13 +352,6 @@ select:focus-visible {
   color: var(--text);
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
 }
-
-.guide-dialog[open] {
-  display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
-}
-
-.guide-dialog::backdrop { background: rgba(4, 12, 18, 0.74); }
 
 .guide-dialog-header {
   display: flex;
@@ -435,6 +450,21 @@ select:focus-visible {
   .screen { padding-left: 17px; padding-right: 17px; }
   .menu-card { padding: 15px; }
   .home-note { margin-top: 100px; }
+}
+
+@media (max-width: 520px) {
+  .guide-dialog-backdrop {
+    place-items: stretch;
+    padding: 0;
+  }
+
+  .guide-dialog {
+    width: 100%;
+    height: 100dvh;
+    max-height: 100dvh;
+    border: 0;
+    border-radius: 0;
+  }
 }
 
 @media (min-width: 700px) {

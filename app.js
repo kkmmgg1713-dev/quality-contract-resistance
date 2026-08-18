@@ -13,6 +13,7 @@
   const contractSummary = document.querySelector("#contract-summary");
   const conductorGuideButton = document.querySelector("#conductor-guide-button");
   const conductorGuideDialog = document.querySelector("#conductor-guide-dialog");
+  const conductorGuidePanel = conductorGuideDialog?.querySelector(".guide-dialog");
   const conductorGuideClose = document.querySelector("#conductor-guide-close");
   const installButton = document.querySelector("#install-button");
   const fatalError = document.querySelector("#fatal-error");
@@ -21,6 +22,7 @@
   let selectedYear = 2025;
   let deferredInstallPrompt = null;
   let toastTimer = null;
+  let conductorGuideReturnFocus = null;
 
   if (!data || !Array.isArray(data.quality) || !Array.isArray(data.contracts)) {
     fatalError.hidden = false;
@@ -236,20 +238,30 @@
     });
   });
 
-  conductorGuideButton.addEventListener("click", () => {
-    if (typeof conductorGuideDialog.showModal === "function") conductorGuideDialog.showModal();
-    else conductorGuideDialog.setAttribute("open", "");
-  });
-
-  function closeConductorGuide() {
-    if (typeof conductorGuideDialog.close === "function") conductorGuideDialog.close();
-    else conductorGuideDialog.removeAttribute("open");
+  function openConductorGuide() {
+    if (!conductorGuideDialog) return;
+    conductorGuideReturnFocus = document.activeElement;
+    conductorGuideDialog.hidden = false;
+    document.body.classList.add("guide-open");
+    conductorGuidePanel?.focus({ preventScroll: true });
   }
 
-  conductorGuideClose.addEventListener("click", closeConductorGuide);
+  function closeConductorGuide() {
+    if (!conductorGuideDialog || conductorGuideDialog.hidden) return;
+    conductorGuideDialog.hidden = true;
+    document.body.classList.remove("guide-open");
+    conductorGuideReturnFocus?.focus({ preventScroll: true });
+  }
 
-  conductorGuideDialog.addEventListener("click", (event) => {
+  conductorGuideButton?.addEventListener("click", openConductorGuide);
+  conductorGuideClose?.addEventListener("click", closeConductorGuide);
+
+  conductorGuideDialog?.addEventListener("click", (event) => {
     if (event.target === conductorGuideDialog) closeConductorGuide();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeConductorGuide();
   });
 
   window.addEventListener("beforeinstallprompt", (event) => {
@@ -271,7 +283,7 @@
 
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js").catch(() => {
+      navigator.serviceWorker.register("./sw.js?v=1.0.12", { updateViaCache: "none" }).catch(() => {
         showToast("오프라인 준비에 실패했습니다. 새로고침해 주세요.");
       });
     });
