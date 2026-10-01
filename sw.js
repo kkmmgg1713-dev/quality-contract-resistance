@@ -1,12 +1,12 @@
-const CACHE_NAME = "quality-resistance-v1.0.12";
+const CACHE_NAME = "quality-resistance-v1.0.13";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./styles.css?v=1.0.12",
-  "./app.js?v=1.0.12",
-  "./data.js?v=1.0.12",
-  "./manifest.webmanifest?v=1.0.12",
-  "./도체저항%20셋팅.png?v=1.0.12",
+  "./styles.css?v=1.0.13",
+  "./app.js?v=1.0.13",
+  "./data.js?v=1.0.13",
+  "./manifest.webmanifest?v=1.0.13",
+  "./도체저항%20셋팅.png?v=1.0.13",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./icons/icon-maskable-512.png",

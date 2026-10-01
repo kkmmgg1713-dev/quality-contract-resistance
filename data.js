@@ -1,1078 +1,1048 @@
 window.APP_DATA = {
   "meta": {
-    "qualityRecords": 177,
-    "qualityVendors": 52,
+    "qualityRecords": 172,
+    "qualityVendors": 48,
     "contract2025SourceRecords": 32,
     "contract2026SourceRecords": 36,
     "contractVendors": 10,
     "sources": [
-      "(붙임) 24년 배전기자재 품질등급 평가결과_등록.pdf",
+      "24년,25년 품질등급 평가결과_프로그램 제작용.pdf",
       "['25년 계약저항]계약건별 대상업체 및 저항값(2025).pdf",
       "'26년 계약건별 대상업체 및 저항값 현황.xlsx"
     ]
   },
   "quality": [
     {
-      "vendor": "가온전선",
-      "group": "가공절연케이블",
-      "grade2024": "A",
-      "grade2023": "B"
+      "vendor": "(주) 모보",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "가온전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주) 모보",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "가온전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "B",
-      "grade2023": "B"
+      "vendor": "(주) 모보",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "가온전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주) 모보",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "가온전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "강원전선",
+      "vendor": "(주) 모보",
       "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "강원전선",
+      "vendor": "(주)금화전선",
       "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "강원전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "A"
+      "vendor": "(주)금화전선",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "강원전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)금화전선",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "강원전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)금화전선",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "강원전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)금화전선",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "경안전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "B",
-      "grade2023": "A"
-    },
-    {
-      "vendor": "고려전선",
-      "group": "가공절연케이블",
-      "grade2024": "A",
-      "grade2023": "B"
-    },
-    {
-      "vendor": "고려전선",
+      "vendor": "(주)금화전선",
       "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "고려전선",
+      "vendor": "(주)금화전선",
       "group": "특고압 인하용절연전선(SOL-PDC)",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "고려전선",
+      "vendor": "(주)대륭전선",
       "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "고려전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)대륭전선",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "고려전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)대륭전선",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "고려전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)대륭전선",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "고려전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)대륭전선",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "극동전선",
+      "vendor": "(주)대륭전선",
       "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "B"
+      "grade2025": "S",
+      "grade2024": "B"
     },
     {
-      "vendor": "극동전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "극동전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "B",
-      "grade2023": "B"
-    },
-    {
-      "vendor": "극동전선",
-      "group": "TR CNCE-W",
-      "grade2024": "B",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "극동전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "B",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "금화전선",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "금화전선",
+      "vendor": "(주)대륭전선",
       "group": "특고압 인하용절연전선(SOL-PDC)",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "금화전선",
+      "vendor": "(주)디케이씨",
+      "group": "저압CV케이블",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "(주)메탈링크",
+      "group": "ACSR",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "(주)이엠지전선",
       "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "금화전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)이엠지전선",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "금화전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)이엠지전선",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "금화전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)이엠지전선",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "금화전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "(주)이엠지전선",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "넥상스대영",
+      "vendor": "(주)이엠지전선",
       "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "B"
     },
     {
-      "vendor": "넥상스코리아",
+      "vendor": "(주)천일씨아이엘",
       "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "B"
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "넥상스코리아",
+      "vendor": "(주)화성전선",
+      "group": "저압CV케이블",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "가온전선(주)",
+      "group": "가공절연케이블(AISC, AITC)",
+      "grade2025": "C",
+      "grade2024": "A"
+    },
+    {
+      "vendor": "가온전선(주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "가온전선(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "가온전선(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "가온전선(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "강원전선주식회사",
       "group": "ACSR AW-TR OC",
-      "grade2024": "A",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "넥상스코리아",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "강원전선주식회사",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "넥상스코리아",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "B",
-      "grade2023": "B"
+      "vendor": "강원전선주식회사",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "넥상스코리아",
-      "group": "TR CNCE-W",
-      "grade2024": "B",
-      "grade2023": "S"
+      "vendor": "강원전선주식회사",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "넥상스코리아",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "B",
-      "grade2023": "S"
+      "vendor": "강원전선주식회사",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "다음전선",
+      "vendor": "강원전선주식회사",
       "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "B"
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "대륙전선",
-      "group": "저압AL도체비닐절연전선(ACSR/AW-OW전선)",
-      "grade2024": "A",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대륙전선",
+      "vendor": "고려전선(주)",
       "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "대륙전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "고려전선(주)",
+      "group": "가공절연케이블(AISC, AITC)",
+      "grade2025": "A",
+      "grade2024": "A"
     },
     {
-      "vendor": "대륙전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "B"
+      "vendor": "고려전선(주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "대륙전선",
-      "group": "TR CNCE-W",
-      "grade2024": "B",
-      "grade2023": "-"
+      "vendor": "고려전선(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "대륙전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "고려전선(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "대륭전선",
+      "vendor": "고려전선(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "고려전선(주)",
       "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "-"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "대륭전선",
+      "vendor": "고려전선(주)",
       "group": "특고압 인하용절연전선(SOL-PDC)",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "대륭전선",
-      "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "극동전선(주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "대륭전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "극동전선(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "대륭전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "극동전선(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "대륭전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "극동전선(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "대륭전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대명전선",
+      "vendor": "넥상스전선 주식회사",
       "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "B"
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "대명전선",
+      "vendor": "넥상스코리아(주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "넥상스코리아(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "넥상스코리아(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "넥상스코리아(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "대륙전선(주)",
+      "group": "ACSR",
+      "grade2025": "B",
+      "grade2024": "해당년도 평가 미시행"
+    },
+    {
+      "vendor": "대륙전선(주)",
       "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "대명전선",
-      "group": "FR CNCO-W",
-      "grade2024": "A",
-      "grade2023": "A"
+      "vendor": "대륙전선(주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "대명전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "A"
+      "vendor": "대륙전선(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "대명전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "대륙전선(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "대신전선",
-      "group": "저압CV케이블",
-      "grade2024": "C",
-      "grade2023": "C"
+      "vendor": "대륙전선(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "A",
+      "grade2024": "B"
     },
     {
-      "vendor": "대신전선",
-      "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대신전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대신전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대신전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대신전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대원전선",
-      "group": "가공절연케이블",
-      "grade2024": "A",
-      "grade2023": "B"
-    },
-    {
-      "vendor": "대원전선",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대원전선",
-      "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대원전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대원전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대원전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대원전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대일전선",
+      "vendor": "대륙전선(주)",
       "group": "저압AL도체비닐절연전선(ACSR/AW-OW전선)",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "A",
+      "grade2024": "A"
     },
     {
-      "vendor": "대일전선",
+      "vendor": "대명전선 주식회사",
+      "group": "ACSR AW-TR OC",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대명전선 주식회사",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "A",
+      "grade2024": "A"
+    },
+    {
+      "vendor": "대명전선 주식회사",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대명전선 주식회사",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대명전선 주식회사",
+      "group": "저압CV케이블",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "대신전선 주식회사",
+      "group": "ACSR AW-TR OC",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대신전선 주식회사",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대신전선 주식회사",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대신전선 주식회사",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대신전선 주식회사",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대신전선 주식회사",
+      "group": "저압CV케이블",
+      "grade2025": "S",
+      "grade2024": "C"
+    },
+    {
+      "vendor": "대원전선(주)",
+      "group": "ACSR AW-TR OC",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대원전선(주)",
+      "group": "가공절연케이블(AISC, AITC)",
+      "grade2025": "A",
+      "grade2024": "A"
+    },
+    {
+      "vendor": "대원전선(주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대원전선(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대원전선(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대원전선(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대원전선(주)",
+      "group": "저압CV케이블",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "대일전선 (주)",
       "group": "ACSR",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "대일전선",
+      "vendor": "대일전선 (주)",
       "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "대일전선",
-      "group": "TR CNCE-W",
-      "grade2024": "B",
-      "grade2023": "S"
+      "vendor": "대일전선 (주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "B",
+      "grade2024": "신규납품"
     },
     {
-      "vendor": "대일전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "B",
-      "grade2023": "C"
+      "vendor": "대일전선 (주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "대한전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "대일전선 (주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "B"
     },
     {
-      "vendor": "대한전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "B",
-      "grade2023": "B"
-    },
-    {
-      "vendor": "대한전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "대한전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "동일전선",
-      "group": "가공절연케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "동일전선",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "동일전선",
-      "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "동일전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "A"
-    },
-    {
-      "vendor": "동일전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "동일전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "두원전선",
-      "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "-"
-    },
-    {
-      "vendor": "두원전선",
-      "group": "ACSR",
-      "grade2024": "A",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "두원전선",
-      "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "두원전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "A"
-    },
-    {
-      "vendor": "두원전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "두원전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "두원전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "디케이씨",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "로디움",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "B"
-    },
-    {
-      "vendor": "리오엠엔씨",
+      "vendor": "대일전선 (주)",
       "group": "저압AL도체비닐절연전선(ACSR/AW-OW전선)",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "리오엠엔씨",
+      "vendor": "대한광통신 주식회사",
       "group": "ACSR",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "해당년도 평가 미시행"
     },
     {
-      "vendor": "메탈링크",
-      "group": "ACSR",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "대한전선",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "명인전선",
-      "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "B"
+      "vendor": "대한전선",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "모보",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "대한전선",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "모보",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "대한전선",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "모보",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "모보",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "모보",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "삼원전선",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "상진전선",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "서강전력",
-      "group": "FR CNCO-W",
-      "grade2024": "B",
-      "grade2023": "A"
-    },
-    {
-      "vendor": "서울전선",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "서울전선",
+      "vendor": "동일전선(주)",
       "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "서울전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "동일전선(주)",
+      "group": "가공절연케이블(AISC, AITC)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "서울전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "B"
+      "vendor": "동일전선(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "서울전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "동일전선(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "서울전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "동일전선(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "서일전선",
+      "vendor": "동일전선(주)",
       "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "씨엔아이전선",
+      "vendor": "두원전선(주)",
+      "group": "ACSR AW-TR OC",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "두원전선(주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "두원전선(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "두원전선(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "두원전선(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "두원전선(주)",
       "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "아이티씨",
-      "group": "저압AL도체비닐절연전선(ACSR/AW-OW전선)",
-      "grade2024": "A",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "아이티씨",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "에스케이이전선",
-      "group": "저압CV케이블",
-      "grade2024": "C",
-      "grade2023": "C"
-    },
-    {
-      "vendor": "엘에스전선",
+      "vendor": "두원전선(주)",
       "group": "친환경 충실 알루미늄 전력케이블(CNPE-W/AL)",
-      "grade2024": "B",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "신규납품"
     },
     {
-      "vendor": "엘에스전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "리오엠엔씨 주식회사",
+      "group": "ACSR",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "엘에스전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "B",
-      "grade2023": "B"
-    },
-    {
-      "vendor": "엘에스전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "엘에스전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "우방전선",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "원일전선",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "유진테크노",
+      "vendor": "리오엠엔씨 주식회사",
       "group": "저압AL도체비닐절연전선(ACSR/AW-OW전선)",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "유진테크노",
+      "vendor": "삼원전선(주)",
       "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "유진테크노",
-      "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "유진테크노",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "C",
-      "grade2023": "-"
-    },
-    {
-      "vendor": "이앤아이",
-      "group": "FR CNCO-W",
-      "grade2024": "B",
-      "grade2023": "A"
-    },
-    {
-      "vendor": "이엠지전선",
+      "vendor": "상진전선(주)",
       "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "이엠지전선",
+      "vendor": "서강전력주식회사",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "서울전선(주)",
       "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "이엠지전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "서울전선(주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "이엠지전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "B"
+      "vendor": "서울전선(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "이엠지전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "서울전선(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "이엠지전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "서울전선(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "이지전력",
-      "group": "FR CNCO-W",
-      "grade2024": "B",
-      "grade2023": "A"
+      "vendor": "서울전선(주)",
+      "group": "저압CV케이블",
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "일진홀딩스",
-      "group": "가공절연케이블",
-      "grade2024": "A",
-      "grade2023": "A"
+      "vendor": "서일전선(주)",
+      "group": "저압CV케이블",
+      "grade2025": "C",
+      "grade2024": "S"
     },
     {
-      "vendor": "일진홀딩스",
+      "vendor": "씨엔아이전선(주)",
+      "group": "저압CV케이블",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "에스케이이전선주식회사",
+      "group": "저압CV케이블",
+      "grade2025": "C",
+      "grade2024": "C"
+    },
+    {
+      "vendor": "엘에스전선 주식회사",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "엘에스전선 주식회사",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "엘에스전선 주식회사",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "엘에스전선 주식회사",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "엘에스전선 주식회사",
       "group": "친환경 충실 알루미늄 전력케이블(CNPE-W/AL)",
-      "grade2024": "B",
-      "grade2023": "A"
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "일진홀딩스",
+      "vendor": "우방전선㈜",
+      "group": "저압CV케이블",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "원일전선주식회사",
+      "group": "저압CV케이블",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "이지전력(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "일진전기 주식회사",
       "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "일진홀딩스",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "일진전기 주식회사",
+      "group": "가공절연케이블(AISC, AITC)",
+      "grade2025": "B",
+      "grade2024": "A"
     },
     {
-      "vendor": "일진홀딩스",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "B"
+      "vendor": "일진전기 주식회사",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "B",
+      "grade2024": "S"
     },
     {
-      "vendor": "일진홀딩스",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "일진전기 주식회사",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "일진홀딩스",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "B",
-      "grade2023": "S"
+      "vendor": "일진전기 주식회사",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "제이에스전선",
-      "group": "TR CNCE-W",
-      "grade2024": "B",
-      "grade2023": "A"
+      "vendor": "일진전기 주식회사",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "제이에스전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "B",
-      "grade2023": "A"
+      "vendor": "일진전기 주식회사",
+      "group": "친환경 충실 알루미늄 전력케이블(CNPE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
     },
     {
-      "vendor": "지앤피",
+      "vendor": "주식회사 로디움",
       "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "B"
+      "grade2025": "C",
+      "grade2024": "S"
     },
     {
-      "vendor": "지케이전선(GK)",
-      "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "B"
-    },
-    {
-      "vendor": "진영전선",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "천일씨아이엘",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "케이비아이코스모링크",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "케이비아이코스모링크",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "케이비아이코스모링크",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "케이비아이코스모링크",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "케이비아이코스모링크",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "케이티씨",
-      "group": "TR CNCE-W",
-      "grade2024": "B",
-      "grade2023": "A"
-    },
-    {
-      "vendor": "케이티씨",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "B",
-      "grade2023": "A"
-    },
-    {
-      "vendor": "티엠씨",
+      "vendor": "주식회사 유진테크노",
       "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "티엠씨",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "주식회사 유진테크노",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "B",
+      "grade2024": "신규납품"
     },
     {
-      "vendor": "티엠씨",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "B",
-      "grade2023": "B"
+      "vendor": "주식회사 유진테크노",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "A",
+      "grade2024": "C"
     },
     {
-      "vendor": "티엠씨",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "주식회사 유진테크노",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "B",
+      "grade2024": "신규납품"
     },
     {
-      "vendor": "티엠씨",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "B",
-      "grade2023": "S"
+      "vendor": "주식회사 유진테크노",
+      "group": "저압AL도체비닐절연전선(ACSR/AW-OW전선)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "한미전선",
-      "group": "가공절연케이블",
-      "grade2024": "C",
-      "grade2023": "B"
-    },
-    {
-      "vendor": "한미전선",
+      "vendor": "주식회사 유진테크노",
       "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "한미전선",
+      "vendor": "주식회사 이앤아이",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "주식회사 이엘일렉트릭",
+      "group": "저압CV케이블",
+      "grade2025": "B",
+      "grade2024": "신규납품"
+    },
+    {
+      "vendor": "주식회사 티엠씨",
+      "group": "ACSR AW-TR OC",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "주식회사 티엠씨",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "주식회사 티엠씨",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "주식회사 티엠씨",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "주식회사 티엠씨",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "주식회사아이티씨",
+      "group": "저압AL도체비닐절연전선(ACSR/AW-OW전선)",
+      "grade2025": "A",
+      "grade2024": "A"
+    },
+    {
+      "vendor": "주식회사아이티씨",
+      "group": "저압CV케이블",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "㈜아시아전선",
+      "group": "저압CV케이블",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "진영전선주식회사",
+      "group": "저압CV케이블",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "케이비아이코스모링크 주식회사",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "케이비아이코스모링크 주식회사",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "케이비아이코스모링크 주식회사",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "케이비아이코스모링크 주식회사",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "케이비아이코스모링크 주식회사",
+      "group": "저압CV케이블",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "케이티씨(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "B",
+      "grade2024": "B"
+    },
+    {
+      "vendor": "한미전선(주)",
+      "group": "ACSR AW-TR OC",
+      "grade2025": "B",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "한미전선(주)",
+      "group": "가공절연케이블(AISC, AITC)",
+      "grade2025": "A",
+      "grade2024": "C"
+    },
+    {
+      "vendor": "한미전선(주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "한미전선(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "한미전선(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "한미전선(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "한미전선(주)",
+      "group": "저압CV케이블",
+      "grade2025": "S",
+      "grade2024": "S"
+    },
+    {
+      "vendor": "한미전선(주)",
       "group": "특고압 인하용절연전선(SOL-PDC)",
-      "grade2024": "S",
-      "grade2023": "S"
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "한미전선",
-      "group": "ACSR AW-TR OC",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "한신전선(주)",
+      "group": "난연성 알루미늄 전력케이블(FR CNCO-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "한미전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "한신전선(주)",
+      "group": "난연성 전력케이블(FR CNCO-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "한미전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "한신전선(주)",
+      "group": "수트리억제 충실 알루미늄 전력케이블(TR CNCE-W/AL)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "한미전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
+      "vendor": "한신전선(주)",
+      "group": "수트리억제 충실 전력케이블(TR CNCE-W)",
+      "grade2025": "S",
+      "grade2024": "S"
     },
     {
-      "vendor": "한미전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "한신전선",
+      "vendor": "한신전선(주)",
       "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "한신전선",
-      "group": "FR CNCO-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "한신전선",
-      "group": "FR CNCO-W/AL",
-      "grade2024": "S",
-      "grade2023": "A"
-    },
-    {
-      "vendor": "한신전선",
-      "group": "TR CNCE-W",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "한신전선",
-      "group": "TR CNCE-W/AL",
-      "grade2024": "S",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "화성전선",
-      "group": "저압CV케이블",
-      "grade2024": "B",
-      "grade2023": "S"
-    },
-    {
-      "vendor": "효림",
-      "group": "저압CV케이블",
-      "grade2024": "S",
-      "grade2023": "B"
+      "grade2025": "S",
+      "grade2024": "B"
     }
   ],
   "contracts": [

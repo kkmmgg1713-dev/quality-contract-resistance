@@ -11,12 +11,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="품질·저항" />
     <title>품질·계약저항 조회</title>
-    <link rel="manifest" href="./manifest.webmanifest?v=1.0.12" />
+    <link rel="manifest" href="./manifest.webmanifest?v=1.0.13" />
     <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
     <link rel="apple-touch-icon" href="./icons/icon-192.png" />
-    <link rel="stylesheet" href="./styles.css?v=1.0.12" />
-    <script src="./data.js?v=1.0.12" defer></script>
-    <script src="./app.js?v=1.0.12" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=1.0.13" />
+    <script src="./data.js?v=1.0.13" defer></script>
+    <script src="./app.js?v=1.0.13" defer></script>
   </head>
   <body>
     <div class="app-shell">
@@ -40,7 +40,7 @@
           <div class="menu-list">
             <button class="menu-card" type="button" data-route="quality">
               <span class="menu-icon" aria-hidden="true">품</span>
-              <span class="menu-copy"><strong>품질등급</strong><small>2024·2023 품질등급 확인</small></span>
+              <span class="menu-copy"><strong>품질등급</strong><small>2025·2024 품질등급 확인</small></span>
               <span class="menu-arrow" aria-hidden="true">›</span>
             </button>
             <button class="menu-card" type="button" data-route="contract">
@@ -60,16 +60,26 @@
           <header class="page-heading">
             <span class="eyebrow">품질등급</span>
             <h1 tabindex="-1">업체별 등급 조회</h1>
-            <p>업체를 선택하면 등록된 모든 품목의 등급을 표시합니다.</p>
+            <p>업체명을 검색하고 선택하면 모든 품목의 등급을 표시합니다.</p>
           </header>
 
           <div class="field-group">
             <label for="quality-vendor">업체명</label>
-            <select id="quality-vendor" aria-describedby="quality-results"></select>
+            <div class="vendor-search">
+              <input id="quality-vendor" type="text" role="combobox" autocomplete="off" spellcheck="false"
+                aria-autocomplete="list" aria-expanded="false" aria-controls="quality-vendor-options"
+                aria-describedby="quality-search-help" placeholder="업체명 또는 초성 입력" />
+              <div id="quality-vendor-dropdown" class="vendor-dropdown" hidden>
+                <ul id="quality-vendor-options" role="listbox" aria-label="업체 검색 결과"></ul>
+                <p id="quality-vendor-empty" class="vendor-empty" hidden>검색 결과가 없습니다.</p>
+              </div>
+            </div>
+            <small id="quality-search-help" class="field-help">예: 대한 또는 ㄷㅎ · 검색 결과에서 업체를 선택하세요.</small>
+            <span id="quality-search-status" class="sr-only" role="status" aria-live="polite"></span>
           </div>
 
           <div id="quality-legend" class="quality-legend" aria-hidden="true" hidden>
-            <span>품목/그룹</span><span>2024</span><span>2023</span>
+            <span>품목/그룹</span><span>2025</span><span>2024</span>
           </div>
           <div id="quality-results" class="quality-results" aria-live="polite"></div>
 
@@ -112,7 +122,7 @@
       </main>
 
         <footer class="app-footer">
-          <span>v1.0.12</span>
+          <span>v1.0.13</span>
         </footer>
     </div>
 
@@ -128,12 +138,12 @@
         <div class="guide-dialog-body">
           <a
             class="guide-image-link"
-            href="./도체저항%20셋팅.png?v=1.0.12"
+            href="./도체저항%20셋팅.png?v=1.0.13"
             target="_blank"
             rel="noopener"
             aria-label="도체저항 설정 이미지를 새 화면에서 크게 보기"
           >
-            <img src="./도체저항%20셋팅.png?v=1.0.12" alt="Raytech Micro Junior 2 도체저항 측정 전 온도, 길이 및 단위 설정 안내" />
+            <img src="./도체저항%20셋팅.png?v=1.0.13" alt="Raytech Micro Junior 2 도체저항 측정 전 온도, 길이 및 단위 설정 안내" />
           </a>
           <p>이미지를 누르면 새 화면에서 확대해서 볼 수 있습니다.</p>
         </div>

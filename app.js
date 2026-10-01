@@ -5,7 +5,11 @@
   const screens = [...document.querySelectorAll("[data-screen]")];
   const backButton = document.querySelector("[data-back]");
   const appBarTitle = document.querySelector(".app-bar-title");
-  const qualityVendorSelect = document.querySelector("#quality-vendor");
+  const qualityVendorInput = document.querySelector("#quality-vendor");
+  const qualityVendorDropdown = document.querySelector("#quality-vendor-dropdown");
+  const qualityVendorOptions = document.querySelector("#quality-vendor-options");
+  const qualityVendorEmpty = document.querySelector("#quality-vendor-empty");
+  const qualitySearchStatus = document.querySelector("#quality-search-status");
   const contractVendorSelect = document.querySelector("#contract-vendor");
   const qualityLegend = document.querySelector("#quality-legend");
   const qualityResults = document.querySelector("#quality-results");
@@ -23,6 +27,9 @@
   let deferredInstallPrompt = null;
   let toastTimer = null;
   let conductorGuideReturnFocus = null;
+  let selectedQualityVendor = "";
+  let filteredQualityVendors = [];
+  let activeQualityOption = -1;
 
   if (!data || !Array.isArray(data.quality) || !Array.isArray(data.contracts)) {
     fatalError.hidden = false;
@@ -32,12 +39,113 @@
 
   const qualityVendors = uniqueSorted(data.quality.map((row) => row.vendor));
 
-  populateSelect(qualityVendorSelect, qualityVendors, "", "선택하세요");
   refreshContractVendors();
 
   function uniqueSorted(values) {
     return [...new Set(values)].sort((a, b) => a.localeCompare(b, "ko"));
   }
+
+  function normalizeVendor(value) {
+    return value.normalize("NFC").toLowerCase().replace(/\s|\(주\)|㈜|주식회사/g, "");
+  }
+
+  function vendorMatches(vendor, query) {
+    const name = normalizeVendor(vendor);
+    const search = normalizeVendor(query);
+    const initials = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ";
+    // Match each initial against a Hangul syllable, also allowing mixed text such as "대한ㅈ".
+    for (let start = 0; start <= name.length - search.length; start += 1) {
+      if ([...search].every((character, offset) => {
+        const letter = name[start + offset];
+        const syllable = letter.charCodeAt(0) - 0xac00;
+        return character === letter || (syllable >= 0 && syllable < 11172 &&
+          character === initials[Math.floor(syllable / 588)]);
+      })) return true;
+    }
+    return false;
+  }
+
+  function closeQualityOptions() {
+    qualityVendorDropdown.hidden = true;
+    qualityVendorInput.setAttribute("aria-expanded", "false");
+    qualityVendorInput.removeAttribute("aria-activedescendant");
+    activeQualityOption = -1;
+  }
+
+  function showQualityOptions() {
+    filteredQualityVendors = qualityVendors.filter((vendor) => vendorMatches(vendor, qualityVendorInput.value));
+    activeQualityOption = -1;
+    qualityVendorInput.removeAttribute("aria-activedescendant");
+    const fragment = document.createDocumentFragment();
+    filteredQualityVendors.forEach((vendor, index) => {
+      const option = document.createElement("li");
+      option.id = `quality-vendor-option-${index}`;
+      option.setAttribute("role", "option");
+      option.setAttribute("aria-selected", "false");
+      option.dataset.index = String(index);
+      option.textContent = vendor;
+      fragment.appendChild(option);
+    });
+    qualityVendorOptions.replaceChildren(fragment);
+    qualityVendorEmpty.hidden = filteredQualityVendors.length > 0;
+    qualityVendorDropdown.hidden = false;
+    qualityVendorInput.setAttribute("aria-expanded", "true");
+    qualitySearchStatus.textContent = filteredQualityVendors.length
+      ? `${filteredQualityVendors.length}개 업체가 검색되었습니다.` : "검색 결과가 없습니다.";
+  }
+
+  function chooseQualityVendor(index) {
+    const vendor = filteredQualityVendors[index];
+    if (!vendor) return;
+    selectedQualityVendor = vendor;
+    qualityVendorInput.value = vendor;
+    qualityVendorInput.focus({ preventScroll: true });
+    closeQualityOptions();
+    qualitySearchStatus.textContent = `${vendor} 선택됨`;
+    renderQuality();
+  }
+
+  qualityVendorInput.addEventListener("input", () => {
+    selectedQualityVendor = "";
+    renderQuality();
+    showQualityOptions();
+  });
+  qualityVendorInput.addEventListener("focus", showQualityOptions);
+  qualityVendorInput.addEventListener("click", showQualityOptions);
+  qualityVendorInput.addEventListener("blur", closeQualityOptions);
+  // Keep focus in the combobox until the option click has selected a vendor.
+  qualityVendorOptions.addEventListener("mousedown", (event) => event.preventDefault());
+  qualityVendorOptions.addEventListener("click", (event) => {
+    const option = event.target.closest('[role="option"]');
+    if (option) chooseQualityVendor(Number(option.dataset.index));
+  });
+  qualityVendorInput.addEventListener("keydown", (event) => {
+    if (event.isComposing || event.keyCode === 229) return;
+    if (event.key === "Escape" || event.key === "Tab") {
+      closeQualityOptions();
+      return;
+    }
+    if (event.key === "Enter" && !qualityVendorDropdown.hidden) {
+      event.preventDefault();
+      if (activeQualityOption >= 0) chooseQualityVendor(activeQualityOption);
+      else if (filteredQualityVendors.length === 1) chooseQualityVendor(0);
+      return;
+    }
+    if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
+    event.preventDefault();
+    if (qualityVendorDropdown.hidden) showQualityOptions();
+    const count = filteredQualityVendors.length;
+    if (!count) return;
+    activeQualityOption = activeQualityOption < 0
+      ? (event.key === "ArrowDown" ? 0 : count - 1)
+      : (activeQualityOption + (event.key === "ArrowDown" ? 1 : -1) + count) % count;
+    [...qualityVendorOptions.children].forEach((option, index) => {
+      option.setAttribute("aria-selected", String(index === activeQualityOption));
+    });
+    const active = qualityVendorOptions.children[activeQualityOption];
+    qualityVendorInput.setAttribute("aria-activedescendant", active.id);
+    active.scrollIntoView({ block: "nearest" });
+  });
 
   function populateSelect(select, values, selected, placeholder = "") {
     const fragment = document.createDocumentFragment();
@@ -77,6 +185,7 @@
   }
 
   function showRoute(route, focusHeading = false) {
+    closeQualityOptions();
     screens.forEach((screen) => {
       screen.hidden = screen.dataset.screen !== route;
     });
@@ -95,17 +204,18 @@
     else location.hash = nextHash;
   }
 
-  function createGrade(value) {
+  function createGrade(value, year) {
     const grade = document.createElement("span");
-    const normalized = ["S", "A", "B", "C"].includes(value) ? value : "-";
-    grade.className = `grade grade-${normalized === "-" ? "na" : normalized.toLowerCase()}`;
-    grade.textContent = normalized;
-    grade.setAttribute("aria-label", `${normalized} 등급`);
+    const isGrade = ["S", "A", "B", "C"].includes(value);
+    const label = value || "-";
+    grade.className = isGrade ? `grade grade-${value.toLowerCase()}` : "grade grade-na grade-note";
+    grade.textContent = label;
+    grade.setAttribute("aria-label", `${year}년 ${label}${isGrade ? " 등급" : ""}`);
     return grade;
   }
 
   function renderQuality() {
-    const vendor = qualityVendorSelect.value;
+    const vendor = selectedQualityVendor;
     qualityLegend.hidden = !vendor;
 
     if (!vendor) {
@@ -121,7 +231,7 @@
       item.className = "quality-row";
       const group = document.createElement("strong");
       group.textContent = row.group;
-      item.append(group, createGrade(row.grade2024), createGrade(row.grade2023));
+      item.append(group, createGrade(row.grade2025, 2025), createGrade(row.grade2024, 2024));
       fragment.appendChild(item);
     });
 
@@ -220,10 +330,6 @@
   backButton.addEventListener("click", () => navigate("home"));
   window.addEventListener("hashchange", () => showRoute(currentRoute(), true));
 
-  qualityVendorSelect.addEventListener("change", () => {
-    renderQuality();
-  });
-
   contractVendorSelect.addEventListener("change", () => {
     renderContracts();
   });
@@ -283,7 +389,7 @@
 
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js?v=1.0.12", { updateViaCache: "none" }).catch(() => {
+      navigator.serviceWorker.register("./sw.js?v=1.0.13", { updateViaCache: "none" }).catch(() => {
         showToast("오프라인 준비에 실패했습니다. 새로고침해 주세요.");
       });
     });
